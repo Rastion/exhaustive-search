@@ -1,5 +1,23 @@
 {
     "entry_point": "exhaustive_search:ExhaustiveSearch",
-    "default_params": {}
-  }
+    "default_params": {},
+    "optimizer_type": "Brute force QUBO problems",
+    "description": "Simple brute force algorithm for QUBO problems. Check all 2^n bitstring combinations. Use for smaller problems up to 12 variables.",
+    "compatible_problems": [
+      "QUBO"
+    ],
+    
+    "parameters": {},
+    "requirements": [
+      "qubots",
+      "numpy"
+    ],
+    "keywords": [
+      "QUBO",
+      "brute force",
+      "small problems"
+    ]
+}
+
+
   
