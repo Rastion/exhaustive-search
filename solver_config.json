@@ -1,23 +1,20 @@
 {
     "entry_point": "exhaustive_search:ExhaustiveSearch",
     "default_params": {},
-    "optimizer_type": "Brute force QUBO problems",
-    "description": "Simple brute force algorithm for QUBO problems. Check all 2^n bitstring combinations. Use for smaller problems up to 12 variables.",
-    "compatible_problems": [
-      "QUBO"
-    ],
-    
-    "parameters": {},
-    "requirements": [
-      "qubots",
-      "numpy"
-    ],
+    "creator": "Rastion",
+    "type": "optimizer",
+    "optimizer_name": "Exhaustive search for QUBO problems",
+    "description": "Simple heuristic that iterates over 2^n possible bitstrings, calculate cost based on QUBO matrix and returns the best bitstring found.",
+    "compatible_problems": ["QUBO"],
+    "parameters": {
+        
+    },
+    "requirements": ["numpy", "qubots"],
     "keywords": [
-      "QUBO",
-      "brute force",
-      "small problems"
+      "heuristic",
+      "Exhaustive search",
+      "Small QUBO"
     ]
 }
-
 
   
